@@ -1,19 +1,29 @@
-import katie from '../images/katie-zaferes.png'
+
 import star from '../images/star.png'
 
 
-const Card = () => {
+
+// interface Props {
+//   img: String,
+//   rating: String;
+//   reviewCount: Number;
+//   country: String;
+//   title: String;
+//   price: Number;
+// }
+
+const Card = (Props) => {
   return (
     <>
         <card className="card">
-            <img className="card--portrait" src={katie} />
+            <img className="card--portrait" src={Props.img} />
             <div className="card--stats">
                 <img className="card--rating-star" src={star} />
-                <p>5.0 </p>
-                <p> (6) • USA</p>
+                <p>{Props.rating} </p>
+                <p> ({Props.reviewCount}) • {Props.country}</p>
             </div>
-            <p>Life lessons with Katie Zaferes</p>
-            <p><strong>From $136 </strong>/ person</p>
+            <p>{Props.title}</p>
+            <p><strong>From ${Props.price} </strong>/ person</p>
         </card>
     </>
   )
