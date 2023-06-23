@@ -16,11 +16,11 @@ const Card = (Props) => {
   return (
     <>
         <card className="card">
-            <img className="card--portrait" src={Props.img} />
+            <img className="card--portrait" src={"../../public/images/" + Props.img} />
             <div className="card--stats">
                 <img className="card--rating-star" src={star} />
                 <p>{Props.rating} </p>
-                <p> ({Props.reviewCount}) • {Props.country}</p>
+                <p> ({Props.reviewCount}) • {Props.location}</p>
             </div>
             <p>{Props.title}</p>
             <p><strong>From ${Props.price} </strong>/ person</p>
