@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
 
-import katie from './images/katie-zaferes.png'
+import katie from '../public/images/katie-zaferes.png'
 /*
 Challenge: Build the Hero component.
 Check the Figma file for the design specifics.
