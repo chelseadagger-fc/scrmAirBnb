@@ -22,8 +22,8 @@ const Card = (Props) => {
                 <p>{Props.rating} </p>
                 <p> ({Props.reviewCount}) • {Props.location}</p>
             </div>
-            <p>{Props.title}</p>
-            <p><strong>From ${Props.price} </strong>/ person</p>
+            <p className="card--title">{Props.title}</p>
+            <p className="card--price"><strong>From ${Props.price} </strong>/ person</p>
         </card>
     </>
   )

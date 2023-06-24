@@ -16,3 +16,45 @@ nav {
 .nav--logo {
   max-width: 100px;
 }
+
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+}
+
+.card--portrait {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--rating-star {
+  height: 14px;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
+}
