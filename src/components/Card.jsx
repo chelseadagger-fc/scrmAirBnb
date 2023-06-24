@@ -29,10 +29,10 @@ const Card = (props) => {
           <div className="card--stats">
               <img className="card--rating-star" src={star} />
               <p>{props.card.stats.rating} </p>
-              <p> ({props.card.stats.reviewCount}) • {props.card.location}</p>
+              <span className="gray"> ({props.card.stats.reviewCount}) • {props.card.location}</span>
           </div>
           <p className="card--title">{props.card.title}</p>
-          <p className="card--price"><strong>From ${props.card.price} </strong>/ person</p>
+          <p className="card--price"><span className="bold">From ${props.card.price} </span>/ person</p>
         </card>
     </>
   )
