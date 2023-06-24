@@ -1,23 +1,10 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import cardData from "./data"
 import "./App.css"
 
-import cardData from './data'
 
-// import katie from '../public/images/katie-zaferes.png'
-
-/*
-Challenge:
-
-- import the array of data from data.js
-- map over the array to create <Card /> components
-- display the array of card components under the navbar
-  (in place of the current <Card /> component)
-
-Note: We haven't styled the group of components yet, so they'll
-still be block elements, stacked vertically. We'll add styling later.
-*/
 
 export default function App() {
 
@@ -30,6 +17,7 @@ export default function App() {
                 location={card.location}
                 title={card.title}
                 price={card.price}
+                openSpots={card.openSpots}
                 />
     })
 
